@@ -9491,25 +9491,25 @@
                                 <a href='/'>Home</a>
                             </li>
                             <li>
-                                <a href='/all-anime-list.html?language=ORG'>All Hindi Dubbed Anime List</a>
+                                <a href='\all-anime-list.html?language=ORG'>All Hindi Dubbed Anime List</a>
                             </li>
                             <li>
-                                <a href='/all-anime-list.html?language=FanDub'>All Hindi FanDub Anime List</a>
+                                <a href='\all-anime-list.html?language=FanDub'>All Hindi FanDub Anime List</a>
                             </li>
                             <li>
-                                <a href='/all-anime-list.html?language=EngSub'>All English Subbed Anime List</a>
+                                <a href='\all-anime-list.html?language=EngSub'>All English Subbed Anime List</a>
                             </li>
                             <li>
-                                <a href='/all-anime-list.html?language=EngDub'>All English Dubbed Anime List</a>
+                                <a href='\all-anime-list.html?language=EngDub'>All English Dubbed Anime List</a>
                             </li>
                             <li>
-                                <a href='/all-anime-list.html?language=HindiSub'>All Hindi Subbed Anime List</a>
+                                <a href='\all-anime-list.html?language=HindiSub'>All Hindi Subbed Anime List</a>
                             </li>
                             <li>
-                                <a href='/all-anime-list.html?language=Drama'>All Drama & Web Series List</a>
+                                <a href='\all-anime-list.html?language=Drama'>All Drama & Web Series List</a>
                             </li>
                             <li>
-                                <a href='/all-anime-list.html?language=Movie'>All Movies List</a>
+                                <a href='\all-anime-list.html?language=Movie'>All Movies List</a>
                             </li>
                         </ul>
                     </div>
@@ -10903,14 +10903,14 @@
 
             // 1. ONGOING
             const ongoing = allItems.filter(i => i.status === 'Ongoing');
-            createRow(container, "Ongoing Anime", ongoing.slice(0, 20), "/all-anime-list.html?language=Ongoing", "play");
+            createRow(container, "Ongoing Anime", ongoing.slice(0, 20), "\all-anime-list.html?language=Ongoing", "play");
 
             // 2. CONTINUE WATCHING
             renderContinueWatching(container);
 
             // 3. MOVIES
             const movies = allItems.filter(i => i.type === 'Movie');
-            createRow(container, "Movies Collection", movies.slice(0, 20), "/all-anime-list.html?language=Movie", "film");
+            createRow(container, "Movies Collection", movies.slice(0, 20), "\all-anime-list.html?language=Movie", "film");
 
             // 4. LANGUAGE
             renderLanguageSection(container, groupedItems);
@@ -10918,7 +10918,7 @@
             // 5. DRAMA & SERIES
             const drama = groupedItems.filter(i => i.type === 'Drama');
             if (drama.length > 0)
-                createRow(container, "Drama & Live Action", drama.slice(0, 20), "/all-anime-list.html?language=Drama", "masks");
+                createRow(container, "Drama & Live Action", drama.slice(0, 20), "\all-anime-list.html?language=Drama", "masks");
 
             // 6. GENRE
             renderGenreSection(container, groupedItems);
@@ -11618,19 +11618,19 @@
         </svg>
         <span>Home</span>
     </a>
-    <a class='nav-link' data-page='series' href='/all-anime-list.html?language=Series'>
+    <a class='nav-link' data-page='series' href='\all-anime-list.html?language=Series'>
         <svg viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
             <path d='M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/></path>
         </svg>
         <span>Series</span>
     </a>
-    <a class='nav-link' data-page='movie' href='/all-anime-list.html?language=Movie'>
+    <a class='nav-link' data-page='movie' href='\all-anime-list.html?language=Movie'>
         <svg viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
             <path d='M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/></path>
         </svg>
         <span>Movies</span>
     </a>
-    <a class='nav-link' data-page='drama' href='/all-anime-list.html?language=Drama'>
+    <a class='nav-link' data-page='drama' href='\all-anime-list.html?language=Drama'>
         <svg viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
             <path d='M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/>
             <path d='M21 12a9 9 0 11-18 0 9 9 0 0118 0z' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/></path>
@@ -11662,31 +11662,31 @@
             <button class='popup-close' onclick='closePopup("languagePopup")'>&times;</button>
         </div>
         <div class='popup-options'>
-            <a class='popup-option' href='/all-anime-list.html?language=English%20Subbed'>
+            <a class='popup-option' href='\all-anime-list.html?language=English%20Subbed'>
                 <span>English Subbed</span>
                 <svg fill='none' stroke='currentColor' stroke-width='2' viewbox='0 0 24 24'>
                     <path d='M9 5l7 7-7 7' stroke-linecap='round' stroke-linejoin='round'/></path>
                 </svg>
             </a>
-            <a class='popup-option' href='/all-anime-list.html?language=English%20Dubbed'>
+            <a class='popup-option' href='\all-anime-list.html?language=English%20Dubbed'>
                 <span>English Dubbed</span>
                 <svg fill='none' stroke='currentColor' stroke-width='2' viewbox='0 0 24 24'>
                     <path d='M9 5l7 7-7 7' stroke-linecap='round' stroke-linejoin='round'/></path>
                 </svg>
             </a>
-            <a class='popup-option' href='/all-anime-list.html?language=Hindi%20Dubbed%20ORG'>
+            <a class='popup-option' href='\all-anime-list.html?language=Hindi%20Dubbed%20ORG'>
                 <span>Hindi Dubbed (Org)</span>
                 <svg fill='none' stroke='currentColor' stroke-width='2' viewbox='0 0 24 24'>
                     <path d='M9 5l7 7-7 7' stroke-linecap='round' stroke-linejoin='round'/></path>
                 </svg>
             </a>
-            <a class='popup-option' href='/all-anime-list.html?language=Hindi%20Fan%20Dubbed'>
+            <a class='popup-option' href='\all-anime-list.html?language=Hindi%20Fan%20Dubbed'>
                 <span>Hindi Fan Dubbed</span>
                 <svg fill='none' stroke='currentColor' stroke-width='2' viewbox='0 0 24 24'>
                     <path d='M9 5l7 7-7 7' stroke-linecap='round' stroke-linejoin='round'/></path>
                 </svg>
             </a>
-            <a class='popup-option' href='/all-anime-list.html?language=Hindi%20Subbed'>
+            <a class='popup-option' href='\all-anime-list.html?language=Hindi%20Subbed'>
                 <span>Hindi Subbed</span>
                 <svg fill='none' stroke='currentColor' stroke-width='2' viewbox='0 0 24 24'>
                     <path d='M9 5l7 7-7 7' stroke-linecap='round' stroke-linejoin='round'/></path>
@@ -11708,13 +11708,13 @@
             <button class='popup-close' onclick='closePopup("statusPopup")'>&times;</button>
         </div>
         <div class='popup-options'>
-            <a class='popup-option' href='/all-anime-list.html?language=Ongoing'>
+            <a class='popup-option' href='\all-anime-list.html?language=Ongoing'>
                 <span>Ongoing Series</span>
                 <svg fill='none' stroke='currentColor' stroke-width='2' viewbox='0 0 24 24'>
                     <path d='M9 5l7 7-7 7' stroke-linecap='round' stroke-linejoin='round'/></path>
                 </svg>
             </a>
-            <a class='popup-option' href='/all-anime-list.html?language=Completed'>
+            <a class='popup-option' href='\all-anime-list.html?language=Completed'>
                 <span>Completed Series</span>
                 <svg fill='none' stroke='currentColor' stroke-width='2' viewbox='0 0 24 24'>
                     <path d='M9 5l7 7-7 7' stroke-linecap='round' stroke-linejoin='round'/></path>
@@ -12272,8 +12272,8 @@
                     list = [];
                 }
             }// ===== LABEL FILTER LOGIC =====
-            else if (path.includes('/all-anime-list.html')) {
-                let label = decodeURIComponent(path.split('/all-anime-list.html')[1]).split('?')[0].replace(/\+/g, ' ');
+            else if (path.includes('\all-anime-list.html')) {
+                let label = decodeURIComponent(path.split('\all-anime-list.html')[1]).split('?')[0].replace(/\+/g, ' ');
                 const L = label.toLowerCase().trim();
                 pageTitle = `Category: ${label}`;
 
@@ -12530,85 +12530,85 @@
                 <div class='widget-content'>
                     <ul>
                         <li>
-                            <a href='/all-anime-list.html?language=#'>#</a>
+                            <a href='\all-anime-list.html?language=#'>#</a>
                         </li>
                         <li>
-                            <a href='/all-anime-list.html?language=A'>A</a>
+                            <a href='\all-anime-list.html?language=A'>A</a>
                         </li>
                         <li>
-                            <a href='/all-anime-list.html?language=B'>B</a>
+                            <a href='\all-anime-list.html?language=B'>B</a>
                         </li>
                         <li>
-                            <a href='/all-anime-list.html?language=C'>C</a>
+                            <a href='\all-anime-list.html?language=C'>C</a>
                         </li>
                         <li>
-                            <a href='/all-anime-list.html?language=D'>D</a>
+                            <a href='\all-anime-list.html?language=D'>D</a>
                         </li>
                         <li>
-                            <a href='/all-anime-list.html?language=E'>E</a>
+                            <a href='\all-anime-list.html?language=E'>E</a>
                         </li>
                         <li>
-                            <a href='/all-anime-list.html?language=F'>F</a>
+                            <a href='\all-anime-list.html?language=F'>F</a>
                         </li>
                         <li>
-                            <a href='/all-anime-list.html?language=G'>G</a>
+                            <a href='\all-anime-list.html?language=G'>G</a>
                         </li>
                         <li>
-                            <a href='/all-anime-list.html?language=H'>H</a>
+                            <a href='\all-anime-list.html?language=H'>H</a>
                         </li>
                         <li>
-                            <a href='/all-anime-list.html?language=I'>I</a>
+                            <a href='\all-anime-list.html?language=I'>I</a>
                         </li>
                         <li>
-                            <a href='/all-anime-list.html?language=J'>J</a>
+                            <a href='\all-anime-list.html?language=J'>J</a>
                         </li>
                         <li>
-                            <a href='/all-anime-list.html?language=K'>K</a>
+                            <a href='\all-anime-list.html?language=K'>K</a>
                         </li>
                         <li>
-                            <a href='/all-anime-list.html?language=L'>L</a>
+                            <a href='\all-anime-list.html?language=L'>L</a>
                         </li>
                         <li>
-                            <a href='/all-anime-list.html?language=M'>M</a>
+                            <a href='\all-anime-list.html?language=M'>M</a>
                         </li>
                         <li>
-                            <a href='/all-anime-list.html?language=N'>N</a>
+                            <a href='\all-anime-list.html?language=N'>N</a>
                         </li>
                         <li>
-                            <a href='/all-anime-list.html?language=O'>O</a>
+                            <a href='\all-anime-list.html?language=O'>O</a>
                         </li>
                         <li>
-                            <a href='/all-anime-list.html?language=P'>P</a>
+                            <a href='\all-anime-list.html?language=P'>P</a>
                         </li>
                         <li>
-                            <a href='/all-anime-list.html?language=Q'>Q</a>
+                            <a href='\all-anime-list.html?language=Q'>Q</a>
                         </li>
                         <li>
-                            <a href='/all-anime-list.html?language=R'>R</a>
+                            <a href='\all-anime-list.html?language=R'>R</a>
                         </li>
                         <li>
-                            <a href='/all-anime-list.html?language=S'>S</a>
+                            <a href='\all-anime-list.html?language=S'>S</a>
                         </li>
                         <li>
-                            <a href='/all-anime-list.html?language=T'>T</a>
+                            <a href='\all-anime-list.html?language=T'>T</a>
                         </li>
                         <li>
-                            <a href='/all-anime-list.html?language=U'>U</a>
+                            <a href='\all-anime-list.html?language=U'>U</a>
                         </li>
                         <li>
-                            <a href='/all-anime-list.html?language=V'>V</a>
+                            <a href='\all-anime-list.html?language=V'>V</a>
                         </li>
                         <li>
-                            <a href='/all-anime-list.html?language=W'>W</a>
+                            <a href='\all-anime-list.html?language=W'>W</a>
                         </li>
                         <li>
-                            <a href='/all-anime-list.html?language=X'>X</a>
+                            <a href='\all-anime-list.html?language=X'>X</a>
                         </li>
                         <li>
-                            <a href='/all-anime-list.html?language=Y'>Y</a>
+                            <a href='\all-anime-list.html?language=Y'>Y</a>
                         </li>
                         <li>
-                            <a href='/all-anime-list.html?language=Z'>Z</a>
+                            <a href='\all-anime-list.html?language=Z'>Z</a>
                         </li>
                     </ul>
                 </div>
@@ -12901,12 +12901,12 @@
         pageEnd > lastPageNo && (pageEnd = lastPageNo),
         a += "<span class='showpageOf'>Page " + currentPageNo + " of " + lastPageNo + "</span>";
         var t = parseInt(currentPageNo) - 1;
-        currentPageNo > 1 && (a += "page" == currentPage ? '<span class="showpage firstpage"><a href="' + home_page + '">' + firstText + "</a></span>" : '<span class="displaypageNum firstpage"><a href="/all-anime-list.html' + postLabel + "?&max-results=" + perPage + '">' + firstText + "</a></span>"),
-        currentPageNo > 2 && (a += 3 == currentPageNo ? "page" == currentPage ? '<span class="showpage"><a href="' + home_page + '">' + prevText + "</a></span>" : '<span class="displaypageNum"><a href="/all-anime-list.html' + postLabel + "?&max-results=" + perPage + '">' + prevText + "</a></span>" : "page" == currentPage ? '<span class="displaypageNum"><a href="#" onclick="redirectpage(' + t + ');return false">' + prevText + "</a></span>" : '<span class="displaypageNum"><a href="#" onclick="redirectlabel(' + t + ');return false">' + prevText + "</a></span>"),
-        pageStart > 1 && (a += "page" == currentPage ? '<span class="displaypageNum"><a href="' + home_page + '">1</a></span>' : '<span class="displaypageNum"><a href="/all-anime-list.html' + postLabel + "?&max-results=" + perPage + '">1</a></span>'),
+        currentPageNo > 1 && (a += "page" == currentPage ? '<span class="showpage firstpage"><a href="' + home_page + '">' + firstText + "</a></span>" : '<span class="displaypageNum firstpage"><a href="\all-anime-list.html' + postLabel + "?&max-results=" + perPage + '">' + firstText + "</a></span>"),
+        currentPageNo > 2 && (a += 3 == currentPageNo ? "page" == currentPage ? '<span class="showpage"><a href="' + home_page + '">' + prevText + "</a></span>" : '<span class="displaypageNum"><a href="\all-anime-list.html' + postLabel + "?&max-results=" + perPage + '">' + prevText + "</a></span>" : "page" == currentPage ? '<span class="displaypageNum"><a href="#" onclick="redirectpage(' + t + ');return false">' + prevText + "</a></span>" : '<span class="displaypageNum"><a href="#" onclick="redirectlabel(' + t + ');return false">' + prevText + "</a></span>"),
+        pageStart > 1 && (a += "page" == currentPage ? '<span class="displaypageNum"><a href="' + home_page + '">1</a></span>' : '<span class="displaypageNum"><a href="\all-anime-list.html' + postLabel + "?&max-results=" + perPage + '">1</a></span>'),
         pageStart > 2 && (a += " ... ");
         for (var s = pageStart; s <= pageEnd; s++)
-            a += currentPageNo == s ? '<span class="pagecurrent">' + s + "</span>" : 1 == s ? "page" == currentPage ? '<span class="displaypageNum"><a href="' + home_page + '">1</a></span>' : '<span class="displaypageNum"><a href="/all-anime-list.html' + postLabel + "?&max-results=" + perPage + '">1</a></span>' : "page" == currentPage ? '<span class="displaypageNum"><a href="#" onclick="redirectpage(' + s + ');return false">' + s + "</a></span>" : '<span class="displaypageNum"><a href="#" onclick="redirectlabel(' + s + ');return false">' + s + "</a></span>";
+            a += currentPageNo == s ? '<span class="pagecurrent">' + s + "</span>" : 1 == s ? "page" == currentPage ? '<span class="displaypageNum"><a href="' + home_page + '">1</a></span>' : '<span class="displaypageNum"><a href="\all-anime-list.html' + postLabel + "?&max-results=" + perPage + '">1</a></span>' : "page" == currentPage ? '<span class="displaypageNum"><a href="#" onclick="redirectpage(' + s + ');return false">' + s + "</a></span>" : '<span class="displaypageNum"><a href="#" onclick="redirectlabel(' + s + ');return false">' + s + "</a></span>";
         pageEnd < lastPageNo - 1 && (a += "..."),
         pageEnd < lastPageNo && (a += "page" == currentPage ? '<span class="displaypageNum"><a href="#" onclick="redirectpage(' + lastPageNo + ');return false">' + lastPageNo + "</a></span>" : '<span class="displaypageNum"><a href="#" onclick="redirectlabel(' + lastPageNo + ');return false">' + lastPageNo + "</a></span>");
         var r = parseInt(currentPageNo) + 1;
@@ -12923,8 +12923,8 @@
     }
     function pagecurrentg() {
         var e = urlactivepage;
-        -1 != e.indexOf("/all-anime-list.html") && (postLabel = -1 != e.indexOf("?updated-max") ? e.substring(e.indexOf("/all-anime-list.html") + 14, e.indexOf("?updated-max")) : e.substring(e.indexOf("/all-anime-list.html") + 14, e.indexOf("?&max"))),
-        -1 == e.indexOf("?q=") && -1 == e.indexOf(".html") && (-1 == e.indexOf("/all-anime-list.html") ? (currentPage = "page",
+        -1 != e.indexOf("\all-anime-list.html") && (postLabel = -1 != e.indexOf("?updated-max") ? e.substring(e.indexOf("\all-anime-list.html") + 14, e.indexOf("?updated-max")) : e.substring(e.indexOf("\all-anime-list.html") + 14, e.indexOf("?&max"))),
+        -1 == e.indexOf("?q=") && -1 == e.indexOf(".html") && (-1 == e.indexOf("\all-anime-list.html") ? (currentPage = "page",
         currentPageNo = -1 != urlactivepage.indexOf("#PageNo=") ? urlactivepage.substring(urlactivepage.indexOf("#PageNo=") + 8, urlactivepage.length) : 1,
         document.write('<script src="' + home_page + 'feeds/posts/summary?max-results=1&alt=json-in-script&callback=totalcountdata"><\/script>')) : (currentPage = "label",
         -1 == e.indexOf("&max-results=") && (perPage = 20),
@@ -12956,7 +12956,7 @@
         if ("page" == currentPage)
             var s = "/search?updated-max=" + t + "&max-results=" + perPage + "#PageNo=" + noPage;
         else
-            s = "/all-anime-list.html" + postLabel + "?updated-max=" + t + "&max-results=" + perPage + "#PageNo=" + noPage;
+            s = "\all-anime-list.html" + postLabel + "?updated-max=" + t + "&max-results=" + perPage + "#PageNo=" + noPage;
         location.href = s
     }
     void 0 === firstText && (firstText = "First"),
