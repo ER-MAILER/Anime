@@ -9527,7 +9527,7 @@
                 </div>
                 <div class='widget BlogSearch' data-version='2' id='search' role='search'>
                     <div class='cari-isi'>
-                        <form action='\search' method='get' style='display:flex; align-items:center;'>
+                        <form action='/Anime/all-anime-list.html' method='get' style='display:flex; align-items:center;'>
                             <input autocomplete='off' class='blakite-search' id='cari' name='q' placeholder='Search Anime...' type='text'/>
                             <label aria-label='Search' class='cari-ikon' for='cari'>
                                 <svg viewBox='0 0 24 24'>
@@ -12614,14 +12614,15 @@
                 </div>
             </div>
             <div class='widget Header credit' data-version='2' id='Header1'>
-                <div class='header-widget'>
-                    <a class='header-image-wrapper' href='https://er-mailer.github.io/Anime/'>
-                      <img 
-                        alt='ER Anime - Watch Hindi &amp; English Dubbed and Subbed Anime Online Free' 
-                        src='https://myimgs.org/storage/images/25796/ER-ANIME.png'
-                      />
-                    </a>
-                </div>
+                    <div class='header-widget'>
+                        <a class='header-image-wrapper' href='https://er-mailer.github.io/Anime/'>
+                            <img 
+                                alt='ER Anime - Watch Hindi &amp; English Dubbed and Subbed Anime Online Free' 
+                                src='https://myimgs.org/storage/images/25796/ER-ANIME.png'
+                                style='width: 100%; max-width: 344px; height: auto;'
+                            />
+                        </a>
+                    </div>
                 <div class='copyright'>Copyright &#169;2026 ER Anime - Watch Hindi &amp;English Dubbed and Subbed Anime Online Free. All Rights Reserved
           </div>
                 <div class='disclaim'>Disclaimer: This site does not store any files on its server. All contents are provided by non-affiliated third parties.</div>
@@ -12954,9 +12955,9 @@
         var a = post.published.$t.substring(0, 19) + post.published.$t.substring(23, 29)
           , t = encodeURIComponent(a);
         if ("page" == currentPage)
-            var s = "\search?updated-max=" + t + "&max-results=" + perPage + "#PageNo=" + noPage;
+            var s = "/Anime/all-anime-list.html?updated-max=" + t + "&max-results=" + perPage + "#PageNo=" + noPage;
         else
-            s = "\all-anime-list.html" + postLabel + "?updated-max=" + t + "&max-results=" + perPage + "#PageNo=" + noPage;
+            s = "/Anime/all-anime-list.html" + postLabel + "?updated-max=" + t + "&max-results=" + perPage + "#PageNo=" + noPage;
         location.href = s
     }
     void 0 === firstText && (firstText = "First"),
