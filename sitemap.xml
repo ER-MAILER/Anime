@@ -18,6 +18,12 @@
 
   <!-- Unique Anime & Series Pages with Clean Human-Readable Slugs -->
   <url>
+    <loc>https://eranime.netlify.app/anime/jujutsu-kaisen-hindi-dubbed-season-3</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://eranime.netlify.app/anime/solo-leveling-hindi-dubbed-season-1</loc>
     <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
